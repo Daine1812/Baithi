@@ -163,18 +163,63 @@ def build_studymate_ai_presentation(output_path: str):
         accent_color=accent,
     )
 
-    # Slide 5: Mô hình kinh doanh
+    # Slide 5: Business Model Canvas – StudyMate AI
     add_title_and_bullets(
         prs,
-        title="4. Mô hình kinh doanh",
+        title="4. Business Model Canvas – StudyMate AI",
         bullets=[
-            ("Business Model Canvas (tóm tắt):", [
-                "Giá trị cốt lõi: Học thông minh, tiết kiệm thời gian, cá nhân hóa",
-                "Phân khúc: Sinh viên, học sinh",
+            ("1) Đối tác chính (Key Partners):", [
+                "OpenAI, HuggingFace, Google AI (AI/ML)",
+                "Trường đại học, trung tâm giáo dục",
+                "Đối tác thanh toán: Momo, ZaloPay, VNPay",
+                "Startup EdTech, nhà xuất bản tài liệu",
             ]),
-            ("Doanh thu:", [
-                "Freemium: dùng cơ bản miễn phí, trả phí cho nâng cao",
-                "Gói Premium: 99k/tháng (tóm tắt nâng cao, bộ đề, AI cá nhân)",
+            ("2) Hoạt động chính (Key Activities):", [
+                "Phát triển & duy trì app (mobile/web)",
+                "Xây dựng/huấn luyện mô hình AI (tóm tắt, quiz, chatbot)",
+                "Marketing online/offline tại trường học",
+                "CSKH & hỗ trợ kỹ thuật",
+            ]),
+            ("3) Giá trị cốt lõi (Value Proposition):", [
+                "Học thông minh hơn, tiết kiệm thời gian",
+                "Cá nhân hóa lộ trình, ôn tập hiệu quả",
+                "Trợ lý ảo AI: tóm tắt, quiz, flashcard",
+                "Khác biệt: tự động hóa – cá nhân hóa – tương tác như gia sư",
+            ]),
+            ("4) Quan hệ khách hàng (Customer Relationships):", [
+                "Miễn phí + nâng cấp Premium",
+                "Hỗ trợ chatbot 24/7, cộng đồng Facebook/Zalo",
+                "Gamification: tích điểm đổi thưởng",
+                "Email/SMS nhắc lịch học, deadline",
+            ]),
+            ("5) Phân khúc khách hàng (Customer Segments):", [
+                "Sinh viên đại học, cao đẳng",
+                "Học sinh THPT chuẩn bị thi",
+                "Người đi làm muốn học thêm",
+            ]),
+            ("6) Kênh phân phối (Channels):", [
+                "App Store, Google Play",
+                "Website chính thức",
+                "MXH: Facebook, TikTok, YouTube",
+                "Hợp tác CLB sinh viên, trung tâm gia sư",
+            ]),
+            ("7) Nguồn lực chính (Key Resources):", [
+                "Đội ngũ dev & chuyên gia AI",
+                "Hạ tầng cloud: AWS, GCP",
+                "Dữ liệu học tập (giáo trình, đề thi)",
+                "Vốn khởi nghiệp/đầu tư",
+            ]),
+            ("8) Cơ cấu chi phí (Cost Structure):", [
+                "Phát triển ứng dụng & server cloud",
+                "Nhân sự: dev, AI, marketing",
+                "Marketing & quảng cáo",
+                "Bản quyền AI/API",
+            ]),
+            ("9) Dòng doanh thu (Revenue Streams):", [
+                "Gói Premium: 99k/tháng (AI nâng cao, flashcard không giới hạn)",
+                "Quảng cáo (phiên bản free)",
+                "B2B: Giải pháp AI cho trường học/trung tâm",
+                "Khóa học mini tích hợp trong app",
             ]),
         ],
         font_name=font_name,
